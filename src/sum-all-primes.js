@@ -1,5 +1,5 @@
-module.exports = function (num) {
-  function createRange (min, max) {
+module.exports = function(num) {
+  function createRange(min, max) {
     var range = [];
     for (var i = min; i <= max; i++) {
       range.push(i);
@@ -7,7 +7,7 @@ module.exports = function (num) {
     return range;
   }
 
-  function isPrime (num) {
+  function isPrime(num) {
     if (num <= 1) {
       return false;
     }
@@ -20,7 +20,7 @@ module.exports = function (num) {
   }
 
   var range = createRange(0, num);
-  return range.reduce(function (sum, x) {
+  return range.reduce(function(sum, x) {
     return isPrime(x) ? sum + x : sum;
   }, 0);
 };

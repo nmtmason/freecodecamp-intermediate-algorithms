@@ -1,3 +1,3 @@
-module.exports = function (bool) {
+module.exports = function(bool) {
   return typeof bool === 'boolean';
 };

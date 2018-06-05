@@ -1,4 +1,4 @@
-module.exports = function (arr, func) {
+module.exports = function(arr, func) {
   while (!func(arr[0])) {
     arr.shift();
   }

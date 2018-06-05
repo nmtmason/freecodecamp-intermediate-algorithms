@@ -1,4 +1,4 @@
-module.exports = function (str) {
+module.exports = function(str) {
   var pairs = {
     '&': '&amp;',
     '<': '&lt;',
@@ -7,5 +7,7 @@ module.exports = function (str) {
     "'": '&apos;'
   };
   var entities = new RegExp('[' + Object.keys(pairs).join('') + ']', 'g');
-  return str.replace(entities, function (entity) { return pairs[entity]; });
+  return str.replace(entities, function(entity) {
+    return pairs[entity];
+  });
 };
